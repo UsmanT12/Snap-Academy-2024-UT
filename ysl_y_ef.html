@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YSL Y Eau Fraiche</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="index.html" class="back-button">Back</a>
+    <div class="container" id="productDetails">
+    </div>
+    <script src="scripts.js"></script>
+    <script>
+            document.addEventListener('DOMContentLoaded', () => {
+            const cologne = ysl_colognes.find(c => c.name === "YSL Y Eau Fraiche");
+            if (cologne) {
+                load_product_details(cologne);
+            } else {
+                console.error('Cologne details not found.');
+            }
+        });
+    </script>
+</body>
+</html>
