@@ -1,18 +1,21 @@
 html,
 body {
-    margin: 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 20px;
     padding: 0;
+    background-color: #f4f4f4;
 }
 
 .main-header {
-    background-color: rgba(0, 0, 0, .3);
+    background-color: rgba(0, 0, 0, .5);
     padding-bottom: 10px;
 }
 
 .title {
     text-align: center;
     margin: 0;
-    font-size: 8em;
+    font-size: 90px;
     font-family: "Helvetica";
     font-weight: normal;
     color: white;
@@ -25,7 +28,8 @@ body {
 }
 
 .card {
-    width: 300px;
+    width: 425px;
+    height: 425px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -33,7 +37,8 @@ body {
 }
 
 .card-content {
-    padding: 20px;
+    text-align: center;
+    padding: 10px;
     font-family: "Verdana";
     color: #777;
 }
@@ -44,18 +49,54 @@ body {
 }
 
 .card img {
-    width: 100%;
-    height: auto;
+    width: 225px;
+    height: 225px;
 }
 
 .footer {
     display: flex;
     justify-content: center;
-    background-color: rgba(0, 0, 0, .3);
+    background-color: rgba(0, 0, 0, .5);
     padding: 10px;
 }
 
-button {
+.buy-link {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.back-button {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 12.5px 15px;
+    font-size: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: fixed;
+    top:25px;
+    left: 25px;
+    z-index: 1000;
+}
+
+.img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.button {
     text-align: center;
     background-color: #666;
     border: none;
